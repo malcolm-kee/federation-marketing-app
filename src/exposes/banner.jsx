@@ -35,17 +35,7 @@ export default function Banner() {
               </a>
             </div>
             <div className="mr-order-2 mr-flex-shrink-0 sm:mr-order-3 sm:mr-ml-2">
-              <button
-                type="button"
-                className="-mr-mr-1 mr-flex mr-p-2 mr-rounded-md hover:mr-bg-pink-500 focus:mr-outline-none focus:mr-ring-2 focus:mr-ring-white"
-                onClick={() => setShow(false)}
-              >
-                <span className="mr-sr-only">Dismiss</span>
-                <XIcon
-                  className="mr-h-6 mr-w-6 mr-text-white"
-                  aria-hidden="true"
-                />
-              </button>
+              <DismissButton onClick={() => setShow(false)} />
             </div>
           </div>
         </div>
@@ -53,3 +43,14 @@ export default function Banner() {
     </div>
   ) : null;
 }
+
+const DismissButton = (props) => (
+  <button
+    type="button"
+    className="-mr-mr-1 mr-flex mr-p-2 mr-rounded-md hover:mr-bg-pink-500 focus:mr-outline-none focus:mr-ring-2 focus:mr-ring-white"
+    {...props}
+  >
+    <span className="mr-sr-only">Dismiss</span>
+    <XIcon className="mr-h-6 mr-w-6 mr-text-white" aria-hidden="true" />
+  </button>
+);
