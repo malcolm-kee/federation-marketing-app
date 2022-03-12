@@ -1,5 +1,6 @@
-import img from '../images/hero.jpg';
 import { Button } from '../components/button';
+import img from '../images/hero.jpg';
+import '../style.css';
 
 export default function HeroSection() {
   return (

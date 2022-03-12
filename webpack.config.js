@@ -4,7 +4,6 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const path = require('path');
 
 const pkgJson = require('./package.json');
@@ -120,7 +119,6 @@ module.exports = async (env, { mode }) => {
         template: './src/index.html',
       }),
       new MiniCssExtractPlugin(),
-      new WebpackManifestPlugin(),
     ].filter(Boolean),
     optimization: {
       minimize: isProd,

@@ -1,5 +1,6 @@
 import { SpeakerphoneIcon, XIcon } from '@heroicons/react/outline';
 import * as React from 'react';
+import '../style.css';
 
 export default function Banner() {
   const [show, setShow] = React.useState(true);
