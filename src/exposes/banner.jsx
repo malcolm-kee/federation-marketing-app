@@ -19,10 +19,10 @@ export default function Banner() {
               </span>
               <p className="mr-ml-3 mr-font-medium mr-text-white mr-truncate">
                 <span className="md:mr-hidden">
-                  We announced a new product!
+                  We announced a new feature!
                 </span>
                 <span className="mr-hidden md:mr-inline">
-                  Big news! We're excited to announce a brand new product.
+                  Big news! We're excited to announce a brand new feature.
                 </span>
               </p>
             </div>
