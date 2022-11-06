@@ -1,4 +1,2 @@
-import './base.css';
-import './style.css';
-
+import './reset.css';
 import('./bootstrap');

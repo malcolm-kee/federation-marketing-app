@@ -1,0 +1,172 @@
+@media (min-width: 1024px) {
+  .root {
+    position: relative;
+  }
+}
+
+.container {
+  max-width: 80rem;
+  margin-inline: auto;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-block: 12rem;
+    text-align: left;
+  }
+}
+
+.copyContent {
+  padding-inline: 16px;
+}
+
+@media (min-width: 640px) {
+  .copyContent {
+    padding-inline: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .copyContent {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280) {
+  .copyContent {
+    padding-right: 4rem;
+  }
+}
+
+.title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.025em;
+  color: rgb(17, 24, 39);
+  font-weight: 800;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1280) {
+  .title {
+    font-size: 3.75rem;
+  }
+}
+
+.titleText {
+  display: block;
+}
+
+@media (min-width: 1280) {
+  .titleText {
+    display: inline;
+  }
+}
+
+.titleEm {
+  color: rgb(219, 39, 119);
+}
+
+.copyText {
+  max-width: 28rem;
+  margin-inline: auto;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-top: 0.75rem;
+  color: rgb(107, 114, 128);
+}
+
+@media (min-width: 640px) {
+  .copyText {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .copyText {
+    margin-top: 1.25rem;
+    max-width: 48rem;
+  }
+}
+
+.btnGroup {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .btnGroup {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btnGroup {
+    justify-content: start;
+  }
+}
+
+.btn {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.imgSection {
+  position: relative;
+  width: 100%;
+  height: 16rem;
+}
+
+@media (min-width: 640px) {
+  .imgSection {
+    height: 18rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .imgSection {
+    height: 24rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imgSection {
+    position: absolute;
+    inset-block: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
