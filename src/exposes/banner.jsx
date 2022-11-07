@@ -1,7 +1,8 @@
+import { Button } from '@mkeeorg/federation-ui';
 import { SpeakerphoneIcon, XIcon } from '@heroicons/react/outline';
 import * as React from 'react';
+
 import styles from './banner.module.css';
-import { Button } from '../components/button';
 
 export default function Banner() {
   const [show, setShow] = React.useState(true);

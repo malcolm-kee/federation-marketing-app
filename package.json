@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "@mkeeorg/federation-ui": "^1.0.1",
     "classnames": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

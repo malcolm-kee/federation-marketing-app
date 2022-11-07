@@ -1,7 +1,8 @@
-import { Button } from '../components/button';
+import { Button } from '@mkeeorg/federation-ui';
+import cx from 'classnames';
+
 import img from '../images/hero.jpg';
 import styles from './hero-section.module.css';
-import cx from 'classnames';
 
 export default function HeroSection() {
   return (
