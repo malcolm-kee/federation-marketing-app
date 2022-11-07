@@ -1,9 +1,14 @@
 import { Button } from '@mkeeorg/federation-ui';
 import cx from 'classnames';
+import { useReward } from 'react-rewards';
 
 import styles from './hero-section.module.css';
 
 export default function HeroSection() {
+  const { reward, isAnimating } = useReward('demo', 'confetti', {
+    elementCount: 100,
+  });
+
   return (
     <div className={styles.root}>
       <div className={styles.container}>
@@ -21,7 +26,13 @@ export default function HeroSection() {
           </p>
           <div className={styles.btnGroup}>
             <Button className={styles.btn}>Get started</Button>
-            <Button variant="white" className={styles.btn}>
+            <Button
+              onClick={reward}
+              disabled={isAnimating}
+              variant="white"
+              className={styles.btn}
+              id="demo"
+            >
               Live demo
             </Button>
           </div>
