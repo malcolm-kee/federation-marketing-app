@@ -127,7 +127,10 @@ module.exports = async (env, { mode }) => {
       new HtmlWebPackPlugin({
         template: './src/index.html',
       }),
-      new MiniCssExtractPlugin(),
+      new MiniCssExtractPlugin({
+        filename: 'static/css/[name].[contenthash].css',
+        chunkFilename: 'static/css/[name].[contenthash].css',
+      }),
     ].filter(Boolean),
     optimization: {
       minimize: isProd,
